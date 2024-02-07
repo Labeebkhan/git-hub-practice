@@ -1,16 +1,19 @@
 "use strict";
-let array = ["Labeeb", "khan", "zaain"];
-function arrays() {
-    function addvalue(item) {
-        array.splice(2, 0, item);
-        return array;
-    }
-    function removevalue() {
-        array.pop();
-        return array;
-    }
-    return { addvalue, removevalue };
+let car = [{
+        company: "Toyota",
+        isused: "Used",
+        year: 2018
+    },
+    {
+        company: "Honda",
+        isused: "New",
+        year: 2020
+    },
+    {
+        company: "Ford",
+        isused: "used",
+        year: 2015
+    }];
+for (let i = 0; i <= car.length - 1; i++) {
+    console.log(`Company name = ${car[i].company}, And the year of assembly = ${car[i].year}.`);
 }
-let hello = arrays();
-console.log(hello.addvalue("Ali"));
-console.log(hello.removevalue());
